@@ -1,0 +1,114 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 30vw;
+}
+
+nav {
+    width:70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.nav-a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color:#F6872D;
+    text-shadow: 1px 1px #aaa4a4;
+}
+
+
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+}
+
+/* section h1 */
+
+.h1 {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    height: 596px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 4rem;
+    color: #F6872D;
+    text-shadow: 4px 4px #aaa4a4;
+}
+
+/* sección destinos */
+
+.destinos-h2 {
+    font-size: 2.5rem;
+    margin: 50px 0;
+    text-align: center;
+    color: #F6872D;
+    text-shadow: 2px 2px #aaa4a4;
+}
+
+.destinos-caja {
+    width: 90vw;
+    margin: 50px auto;
+}
+
+h4 {
+    font-size: 2rem;
+    color: #666060;
+}
+
+.foto-texto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.destinos-img {
+    max-width: 30%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* hoteles */
+
+.hoteles-h2 {
+    font-size: 2.5rem;
+    margin: 50px 0;
+    text-align: center;
+    color: #F6872D;
+    text-shadow: 2px 2px #aaa4a4;
+}
+
+.hoteles-contenedor {
+    width: 90vw;
+    margin: 50px auto;
+}
+
+#imagen-hoteles {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.hoteles-button {
+    margin: 0 auto;
+}
