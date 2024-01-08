@@ -59,7 +59,7 @@ h1 {
 
 .destinos-h2 {
     font-size: 2.5rem;
-    margin: 50px 0;
+    margin-top: 150px;
     text-align: center;
     color: #F6872D;
     text-shadow: 2px 2px #aaa4a4;
@@ -73,6 +73,7 @@ h1 {
 h4 {
     font-size: 2rem;
     color: #666060;
+    margin-bottom: 20px;
 }
 
 .foto-texto {
@@ -83,16 +84,37 @@ h4 {
     gap: 2rem;
 }
 
+@media (max-width: 600px) {
+    .foto-texto{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .destinos-img {
-    max-width: 30%;
+    max-width: 40%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+    .destinos-img {
+        max-width: 60%;
+    }
 }
 
 /* hoteles */
 
+#hoteles {
+    background-color: #6660605e;
+    border-top: 1px solid #666060;
+    border-bottom: 1px solid #666060;
+}
+
 .hoteles-h2 {
     font-size: 2.5rem;
-    margin: 50px 0;
+    margin-top: 100px;
     text-align: center;
     color: #F6872D;
     text-shadow: 2px 2px #aaa4a4;
@@ -101,14 +123,51 @@ h4 {
 .hoteles-contenedor {
     width: 90vw;
     margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrado horizontal */
+    justify-content: center; /* Centrado vertical */
 }
 
-#imagen-hoteles {
+#imagenHoteles, #imagenHotelesSafaris, #cruceros, #trekkings {
     width: 500px;
     height: 500px;
     margin: 0 auto;
 }
 
+/* Media query para pantallas con un ancho máximo de 600px */
+@media (max-width: 600px) {
+    #imagenHoteles,
+    #imagenHotelesSafaris,
+    #cruceros {
+        width: 300px;
+        height: 300px;
+    }
+}
+
 .hoteles-button {
-    margin: 0 auto;
+    margin-top: 10px; /* Puedes ajustar el margen según sea necesario */
+}
+
+.hotel-isla_p {
+    margin: 0px 20vw 30px 20vw;
+}
+
+.hotel-isla_h5 {
+    margin: 10px 20vw 0px 20vw;
+    font-size: 1.5rem;
+    color: #666060;
+}
+
+button {
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #F6872D;
+    color: #666060;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ec954f;
+    cursor: pointer;
 }
